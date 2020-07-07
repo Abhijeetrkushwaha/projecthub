@@ -17,7 +17,7 @@ class App extends Component{
           <NavBar />
           <Switch>
             <Route exact path='/' component={DashBoard} />
-            <Route path='/project/new/:id' component={ProjectDetails} />
+            <Route path='/project/:id' component={ProjectDetails} />
             <Route path='/signin' component={SignIn} />
             <Route path='/signup' component={SignUp} />
             <Route path='/create' component={CreateProject} />
@@ -29,3 +29,5 @@ class App extends Component{
 }
 
 export default App;
+// abhijeet@gmail.com
+// abhijeet12345;
