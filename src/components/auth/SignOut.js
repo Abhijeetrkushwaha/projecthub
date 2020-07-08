@@ -40,7 +40,7 @@ class SignOut extends Component {
             <input type="text" id="firstName" onChange={this.handleChange} />
           </div>
           <div className="input-field">
-            <label htmlFor="lastName">Password</label>
+            <label htmlFor="lastName">Last Name</label>
             <input type="text" id="lastName" onChange={this.handleChange} />
           </div>
           <div className="input-field">

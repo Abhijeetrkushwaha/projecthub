@@ -37,7 +37,7 @@ export const signUp = (newUser) => {
             newUser.email,
             newUser.password
         ).then((res) => {
-            console.log(res.user.uid);
+            // console.log(res.user.uid);
             
             return firestore.collection("users").doc(res.user.uid).set({
                 firstName: newUser.firstName,
