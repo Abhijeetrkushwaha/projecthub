@@ -21,7 +21,7 @@ class SignOut extends Component {
   };
   render() {
     const { auth, authError } = this.props;
-    if (auth.uid) return <Redirect to="/" />
+    if (auth.uid) return <Redirect to="/projecthub" />;
 
     return (
       <div className="container">

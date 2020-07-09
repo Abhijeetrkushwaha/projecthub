@@ -6,7 +6,8 @@ import ProjectDetails from './components/project/ProjectDetails'
 import SignIn from './components/auth/SignIn'
 import SignUp from './components/auth/SignOut'
 import CreateProject from './components/project/CreateProject'
-import './App.css'
+import './App.css';
+import { Link } from "react-router-dom";
 
 
 class App extends Component{
@@ -15,12 +16,15 @@ class App extends Component{
       <BrowserRouter>
         <div className="App">
           <NavBar />
+          <Link to="/projecthub" className="container">
+            <h4 className="center black-text">ProjectHub</h4>
+          </Link>
           <Switch>
-            <Route exact path='/' component={DashBoard} />
-            <Route path='/project/:id' component={ProjectDetails} />
-            <Route path='/signin' component={SignIn} />
-            <Route path='/signup' component={SignUp} />
-            <Route path='/create' component={CreateProject} />
+            <Route exact path="/projecthub" component={DashBoard} />
+            <Route path="/projecthub/project/:id" component={ProjectDetails} />
+            <Route path="/projecthub/signin" component={SignIn} />
+            <Route path="/projecthub/signup" component={SignUp} />
+            <Route path="/projecthub/create" component={CreateProject} />
           </Switch>
         </div>
       </BrowserRouter>

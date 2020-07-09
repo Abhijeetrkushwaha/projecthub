@@ -24,7 +24,7 @@ class SignIn extends Component {
         // console.log(process.env.FIREBASE_CONFIG);
         
         const { authError, auth } = this.props
-        if (auth.uid) return <Redirect to="/" />;
+        if (auth.uid) return <Redirect to="/projecthub" />;
         return (
           <div className="container">
             {auth.isLoaded && (

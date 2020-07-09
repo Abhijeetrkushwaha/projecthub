@@ -12,7 +12,7 @@ class DashBoard extends Component{
         const { projects, auth, notifications } = this.props;
         // console.log(projects);
         
-        if(!auth.uid) return <Redirect to='/signin' />
+        if(!auth.uid) return <Redirect to="/projecthub/signin" />;
         
          return (
             <div className="dashboard container">

@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import SignInLinks from "./SigninLinks";
 import SignOutLinks from "./SignoutlLink";
 import { connect } from 'react-redux'
@@ -13,7 +12,6 @@ const NavBar = (props) => {
     return (
         <nav className="nav-wrapper grey darken-3">
             <div className="container">
-                <Link to='/' className="brand-logo left">Projecthub</Link>
                 {auth.isLoaded && links}
             </div>
         </nav>
